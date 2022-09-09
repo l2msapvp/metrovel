@@ -1,0 +1,268 @@
+/*---------------------------------------*/
+/*  Template created by Tomas Sardyha    */
+/*            (  Darsain  )              */
+/*     (  http://www.darsain.net/  )     */
+/*---------------------------------------*/
+
+
+/* ------ RESET ------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12px;
+	font-family: Trebuchet MS, Verdana;
+  text-decoration: none;
+}
+
+body {
+  color: #000;
+  text-decoration: none;
+  background: url('style/body_bg.jpg') no-repeat center top #000000;
+}
+
+h1 {
+  font-size: 30px;
+	font-family: Sylfaen, Trebuchet MS, Verdana;
+  color: #000000;
+}
+
+h2 {
+  font-size: 20px;
+	font-family: Sylfaen, Trebuchet MS, Verdana;
+  color: #442b17;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+	font-family: Sylfaen, Trebuchet MS, Verdana;
+  color: #442b17;
+}
+
+a, a:link, a:visited {
+  color: #6b1212;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover { color: #f7f0e8; text-decoration: none; }
+
+input {
+  margin: 3px 0;
+  padding: 2px 3px;
+  color: #baaea4;
+  background: url('style/input-bg.png');
+  border: 0;
+}
+
+input.button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* ------ GLOBAL ------- */
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.ffix {
+  position: relative; clear: both;
+  margin: 0; padding: 0; width: 0;
+  height: 0; font-size: 0; line-height: 0;
+}
+
+.opButton {
+  opacity: .70;
+  filter: alpha(opacity=70);
+  -moz-opacity: .70;
+  cursor: pointer;
+}
+
+.opButton:hover {
+  opacity: 1;
+  filter: alpha(opacity=99);
+  -moz-opacity: 1;
+}
+
+.pointer { cursor: pointer; }
+
+/* ------ LAYOUT ------- */
+
+div.mainwrapper { position: relative; width: 974px; max-width: 974px; min-width: 974px; }
+
+a.logo_link, a.logo_link:link, a.logo_link:visited {
+  position: absolute;
+  width: 315px;
+  height: 180px;
+  left: 80px;
+  top: 65px;
+  text-decoration: none;
+  outline: none;
+}
+a.logo_link:hover { color: #f7f0e8; text-decoration: none; }
+
+
+/* ------ Main Menu ------- */
+
+div.main_menu { position: absolute; top: 303px; left: 35px; }
+
+div.main_menu a, div.main_menu a:link, div.main_menu a:visited {
+  display: block;
+  float: left;
+  width: 180px; max-width: 180px; min-width: 180px;
+  height: 55px; max-height: 55px; min-height: 55px;
+  text-decoration: none;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+div.main_menu a:hover { background-position: center top; }
+
+div.main_menu a.home { background-image: url('style/button_home.png') }
+div.main_menu a.serverinfo { background-image: url('style/button_serverinfo.png') }
+div.main_menu a.connect { background-image: url('style/button_connect.png') }
+div.main_menu a.forum { background-image: url('style/button_forum.png') }
+div.main_menu a.contact { background-image: url('style/button_contact.png') }
+
+
+
+/* ------ Content wrapper ------- */
+
+div.contwrapper-top {
+  width: 974px; max-width: 974px; min-width: 974px;
+  height: 385px;
+  background: url('style/contwrapper-top.png') no-repeat center bottom;
+}
+
+div.contwrapper-bottom {
+  height: 40px; max-height: 40px; min-height: 40px;
+  background: url('style/contwrapper-bottom.png') no-repeat center top;
+}
+
+div.contwrapper {
+  padding: 0 37px 0 60px;
+  background: url('style/contwrapper-bg.png') repeat-y center top;
+}
+
+
+
+/* ------ Side menu ------- */
+
+div.side_menu {
+  float: right;
+  margin-top: -8px;
+  width: 198px; max-width: 198px; min-width: 198px;
+  text-align: center;
+}
+
+
+div.side_menu div.buttons a, div.side_menu div.buttons a:link, div.side_menu div.buttons a:visited {
+  display: block;
+  margin: -1px 0;
+  background: url('style/side_button.png') no-repeat center top;
+  color: #1e1207;
+  font-weight: bold;
+  line-height: 34px;
+  text-decoration: none;
+  outline: none;
+}
+div.side_menu div.buttons a:hover { color: #d1c1b3; background-position: center bottom; }
+
+
+div.side_menu div.box-serverstatus {
+  margin: 0 10px;
+  height: 16px; max-height: 16px; min-height: 16px;
+  background: url('style/box-serverstatus.png') no-repeat left bottom;
+  line-height: 0;
+}
+div.side_menu div.box-login {
+  margin: 0 10px;
+  height: 16px; max-height: 16px; min-height: 16px;
+  background: url('style/box-login.png') no-repeat left bottom;
+  line-height: 0;
+}
+div.side_menu div.box-usercp {
+  margin: 0 10px;
+  height: 16px; max-height: 16px; min-height: 16px;
+  background: url('style/box-usercp.png') no-repeat left bottom;
+  line-height: 0;
+}
+
+div.side_menu div.box {
+  margin: 0 10px 10px 10px;
+  *margin: -4px 10px 10px 10px;
+  padding: 3px 5px 8px 5px;
+  background: url('style/box.png') no-repeat left bottom;
+  color: #baaea4;
+}
+
+
+/* ------ Content ------- */
+
+div.content {
+  float: left;
+  width: 660px; max-width: 660px; min-width: 660px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ Footer ------- */
+
+div.footer {
+  height: 80px; max-height: 80px; min-height: 80px;
+  background: url('style/footer.png') no-repeat center top;
+  text-align: center;
+  color: #7d7c7c;
+  line-height: 60px;
+  vertical-align: middle;
+  text-shadow: #000 1px 1px 0;
+}
+
+div.footer a { color: #ababab; }
+div.footer a:hover { color: #fff; }
+
+
+
+
+
